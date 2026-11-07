@@ -1,59 +1,51 @@
-# 🐍 Snake Game
+# 🐍 Snake Game 2.0
 
-A fun and interactive classic Snake Game built using HTML, CSS, and JavaScript.
+A modern browser-based Snake Game built using HTML, CSS, and JavaScript. Enjoy the classic snake game with a modern gaming interface and exciting features.
 
 ## 🚀 Live Demo
-
-🎮 [Play Snake Game](https://soumya-snake-game.vercel.app/)
+[Play Snake Game](https://soumya-snake-game.vercel.app/)
 
 ## ✨ Features
 
-- Classic Snake Game gameplay
-- Collect apples to increase your score
-- Best score tracking using Local Storage
-- Colorful checkerboard game board
-- Keyboard arrow-key controls
-- Mobile directional controls
-- Increasing game speed
-- Game Over and Restart functionality
-- Fullscreen support
-- Difficulty settings
+- 🎮 Modern gaming interface
+- 🎨 Three themes: Neon Green, Cyber Purple, and Classic Green
+- ⚡ Power-ups: Speed, Slow Motion, and Shield
+- 🏆 Top 10 Leaderboard
+- 📈 Multiple game levels
+- 🚧 Obstacles that increase with levels
+- ⏸️ Pause and Resume
+- 🔄 Restart and Home options
+- 📱 Mobile-friendly controls
+- 💾 Best score saved using Local Storage
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Canvas API
+- HTML Canvas API
 - Local Storage
-- Vercel
 
-## 🎮 How to Play
+## 🎯 How to Play
 
-| Key | Action |
-|---|---|
-| ↑ | Move Up |
-| ↓ | Move Down |
-| ← | Move Left |
-| → | Move Right |
-
-Collect apples, grow your snake, avoid walls and your own body, and achieve the highest score!
+1. Open the game using the Live Demo link.
+2. Click **Play Game**.
+3. Use arrow keys or WASD to control the snake.
+4. Collect food to increase your score.
+5. Avoid hitting walls, yourself, and obstacles.
+6. Collect power-ups.
+7. Reach higher scores and unlock new levels.
 
 ## 💻 Run Locally
 
-Clone the repository:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/Soumyasriau/Snake-Game.git
-```
+   ```bash
+   git clone https://github.com/Soumyasriau/Snake-Game.git
+   ```
 
-Navigate to the folder:
-
-```bash
-cd Snake-Game
-```
-
-Open `index.html` in your browser.
+2. Open the project folder.
+3. Open `index.html` in your browser.
 
 ## 📂 Project Structure
 
@@ -69,12 +61,8 @@ Snake-Game/
 
 Deployed using Vercel.
 
-**Live URL:** https://soumya-snake-game.vercel.app/
-
 ## 👩‍💻 Author
 
+**Soumya**
+
 GitHub: [Soumyasriau](https://github.com/Soumyasriau)
-
----
-
-⭐ Enjoy playing Snake Game!
