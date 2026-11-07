@@ -1,23 +1,23 @@
 # 🐍 Snake Game
 
-An interactive and fun Snake Game built using **HTML, CSS, and JavaScript**. Control the snake, collect apples, increase your score, and challenge yourself to beat your highest score!
+A fun and interactive classic Snake Game built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-🎮 **[Play Soumya Snake Game](https://soumya-snake-game.vercel.app/)**
+🎮 [Play Snake Game](https://soumya-snake-game.vercel.app/)
 
 ## ✨ Features
 
-- 🐍 Classic Snake Game gameplay
-- 🍎 Collect apples and increase your score
-- 🏆 Best score tracking using Local Storage
-- 🎨 Colorful checkerboard game interface
-- ⌨️ Keyboard arrow-key controls
-- 📱 On-screen directional controls
-- ⚡ Increasing game speed as your score grows
-- 🔄 Restart and replay functionality
-- ⛶ Fullscreen support
-- ⚙️ Multiple difficulty settings
+- Classic Snake Game gameplay
+- Collect apples to increase your score
+- Best score tracking using Local Storage
+- Colorful checkerboard game board
+- Keyboard arrow-key controls
+- Mobile directional controls
+- Increasing game speed
+- Game Over and Restart functionality
+- Fullscreen support
+- Difficulty settings
 
 ## 🛠️ Technologies Used
 
@@ -37,33 +37,28 @@ An interactive and fun Snake Game built using **HTML, CSS, and JavaScript**. Con
 | ← | Move Left |
 | → | Move Right |
 
-- Collect apples to earn points.
-- Avoid hitting the walls and your own body.
-- Try to achieve your highest score!
+Collect apples, grow your snake, avoid walls and your own body, and achieve the highest score!
 
 ## 💻 Run Locally
 
-**1. Clone the repository**
+Clone the repository:
 
 ```bash
 git clone https://github.com/Soumyasriau/Snake-Game.git
 ```
 
-**2. Navigate to the project folder**
+Navigate to the folder:
 
 ```bash
 cd Snake-Game
 ```
 
-**3. Open `index.html` in your browser.**
-
-No additional dependencies are required.
+Open `index.html` in your browser.
 
 ## 📂 Project Structure
 
 ```text
 Snake-Game/
-│
 ├── index.html
 ├── main.css
 ├── script.js
@@ -72,20 +67,14 @@ Snake-Game/
 
 ## 🌐 Deployment
 
-Deployed using **Vercel**.
+Deployed using Vercel.
 
-**Live Website:** https://soumya-snake-game.vercel.app/
-
-## 🎯 Project Objective
-
-The objective of this project is to develop an interactive browser-based game while demonstrating JavaScript logic, DOM manipulation, Canvas API usage, keyboard event handling, and responsive user interface development.
+**Live URL:** https://soumya-snake-game.vercel.app/
 
 ## 👩‍💻 Author
 
-**Soumya**
-
-GitHub: [@Soumyasriau](https://github.com/Soumyasriau)
+GitHub: [Soumyasriau](https://github.com/Soumyasriau)
 
 ---
 
-⭐ If you enjoyed this project, please consider giving the repository a star!
+⭐ Enjoy playing Snake Game!
