@@ -3,7 +3,8 @@
 A modern browser-based Snake Game built using HTML, CSS, and JavaScript. Enjoy the classic snake game with a modern gaming interface and exciting features.
 
 ## 🚀 Live Demo
-[Play Snake Game](https://soumya-snake-game.vercel.app/)
+
+[**Play Snake Game**](https://soumya-snake-game.vercel.app/)
 
 ## ✨ Features
 
@@ -34,7 +35,7 @@ A modern browser-based Snake Game built using HTML, CSS, and JavaScript. Enjoy t
 4. Collect food to increase your score.
 5. Avoid hitting walls, yourself, and obstacles.
 6. Collect power-ups.
-7. Reach higher scores and unlock new levels.
+7. Reach higher scores to unlock new levels.
 
 ## 💻 Run Locally
 
