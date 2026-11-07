@@ -3,61 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snake Adventure</title>
+<title>Snake Game 2.0</title>
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="game">
+<main class="app">
   <header>
-    <div>🍎 <span id="score">0</span></div>
-    <div>🏆 <span id="best">0</span></div>
-    <div class="tools">
-      <button id="full">⛶</button>
-      <button id="sound">🔊</button>
-      <button id="close">×</button>
-    </div>
+    <h1>🐍 SNAKE <span>2.0</span></h1>
+    <button id="sound">🔊</button>
   </header>
 
-  <section id="menu">
-    <div class="preview">
-      <div class="snake-preview">👀</div>
-      <div class="apple-preview">🍎</div>
-    </div>
-    <button id="play">▷　Play</button>
-    <button id="settings">⚙　Settings</button>
-    <button id="daily">☆　Daily challenge</button>
+  <section id="home" class="screen">
+    <div class="hero">🐍</div>
+    <h2>NEON SNAKE</h2>
+    <p>Eat • Grow • Survive</p>
+    <button id="play" class="primary">▶ PLAY GAME</button>
+    <button id="themes">🎨 THEMES</button>
+    <button id="leaderboard">🏆 LEADERBOARD</button>
+    <button id="settings">⚙ SETTINGS</button>
   </section>
 
-  <section id="settingsPanel" class="hidden">
-    <h2>Settings</h2>
-    <label>Game speed</label>
-    <select id="speed">
+  <section id="themePanel" class="screen hidden">
+    <h2>Choose Theme</h2>
+    <button data-theme="neon">Neon Green</button>
+    <button data-theme="cyber">Cyber Purple</button>
+    <button data-theme="classic">Classic Green</button>
+    <button class="back">← Back</button>
+  </section>
+
+  <section id="settingsPanel" class="screen hidden">
+    <h2>Game Settings</h2>
+    <label>Difficulty</label>
+    <select id="difficulty">
       <option value="180">Easy</option>
-      <option value="130" selected>Normal</option>
-      <option value="90">Fast</option>
+      <option value="130" selected>Medium</option>
+      <option value="90">Hard</option>
     </select>
-    <button id="back">Back</button>
+    <button class="back">← Back</button>
   </section>
 
-  <div id="boardWrap" class="hidden">
-    <canvas id="board"></canvas>
-    <div id="over" class="hidden">
-      <h2>Game Over!</h2>
-      <p>Score: <span id="final">0</span></p>
-      <button id="again">Play Again</button>
-      <button id="home">Home</button>
-    </div>
-  </div>
+  <section id="leaderPanel" class="screen hidden">
+    <h2>🏆 Top 10 Scores</h2>
+    <ol id="scores"></ol>
+    <button class="back">← Back</button>
+  </section>
 
-  <div id="mobileControls" class="hidden">
-    <button data-dir="up">▲</button>
-    <div>
-      <button data-dir="left">◀</button>
-      <button data-dir="down">▼</button>
-      <button data-dir="right">▶</button>
+  <section id="gamePanel" class="hidden">
+    <div class="hud">
+      <span>Score: <b id="score">0</b></span>
+      <span>Level: <b id="level">1</b></span>
+      <span>Best: <b id="best">0</b></span>
     </div>
+    <div class="power-info" id="powerInfo">🍎 Collect food and grow!</div>
+    <canvas id="board"></canvas>
+    <div class="game-actions">
+      <button id="pause">Ⅱ PAUSE</button>
+      <button id="restart">↻ RESTART</button>
+      <button id="homeBtn">⌂ HOME</button>
+    </div>
+    <div id="over" class="overlay hidden">
+      <h2 id="overTitle">GAME OVER</h2>
+      <p>Final Score: <b id="finalScore">0</b></p>
+      <button id="again" class="primary">PLAY AGAIN</button>
+      <button id="overHome">HOME</button>
+    </div>
+  </section>
+
+  <div class="mobile-controls hidden" id="mobileControls">
+    <button data-dir="up">▲</button>
+    <div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div>
   </div>
-</div>
+</main>
 <script src="script.js"></script>
 </body>
 </html>
