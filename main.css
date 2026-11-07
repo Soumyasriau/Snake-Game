@@ -1,0 +1,62 @@
+﻿* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  min-height:100vh; background:#192b12; color:white;
+  font-family:Arial,sans-serif; display:flex;
+  justify-content:center; align-items:center;
+}
+.game {
+  width:min(100%,850px); height:min(96vh,900px);
+  background:#548438; padding:18px;
+  display:flex; flex-direction:column; gap:18px;
+}
+header {
+  height:70px; flex-shrink:0; background:#47752c;
+  display:flex; align-items:center; gap:65px;
+  padding:0 25px; font-size:25px;
+}
+header div { display:flex; align-items:center; gap:10px; }
+.tools { margin-left:auto; }
+button {
+  border:0; border-radius:9px; background:#1454c9;
+  color:white; padding:13px 22px; font-size:21px;
+  cursor:pointer;
+}
+.tools button { background:transparent; padding:8px; font-size:27px; }
+#menu {
+  flex:1; display:flex; flex-direction:column;
+  justify-content:flex-end; gap:13px;
+  background:#4bbbea; border-radius:10px; overflow:hidden;
+  padding:20px;
+}
+.preview {
+  flex:1; display:flex; justify-content:space-evenly;
+  align-items:center; font-size:65px;
+  background:linear-gradient(to bottom,#4bbbea 75%,#a1d849 75%);
+}
+.snake-preview { font-size:60px; }
+#menu button { min-height:60px; }
+#boardWrap {
+  flex:1; min-height:0; position:relative;
+  background:#a2d849; padding:30px;
+}
+#board { width:100%; height:100%; display:block; }
+#over {
+  position:absolute; inset:0; background:#0009;
+  display:flex; flex-direction:column; gap:15px;
+  justify-content:center; align-items:center;
+}
+#over h2 { font-size:36px; }
+#settingsPanel {
+  flex:1; background:#4bbbea; display:flex;
+  flex-direction:column; justify-content:center;
+  align-items:center; gap:25px; font-size:23px;
+}
+#settingsPanel select { padding:12px; font-size:18px; }
+#mobileControls { text-align:center; }
+#mobileControls button { margin:4px; min-width:55px; }
+.hidden { display:none !important; }
+@media(max-width:500px) {
+  .game { height:100vh; padding:10px; gap:10px; }
+  header { gap:20px; padding:0 10px; }
+  #boardWrap { padding:12px; }
+}

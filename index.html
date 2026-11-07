@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snake Adventure</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="game">
+  <header>
+    <div>🍎 <span id="score">0</span></div>
+    <div>🏆 <span id="best">0</span></div>
+    <div class="tools">
+      <button id="full">⛶</button>
+      <button id="sound">🔊</button>
+      <button id="close">×</button>
+    </div>
+  </header>
+
+  <section id="menu">
+    <div class="preview">
+      <div class="snake-preview">👀</div>
+      <div class="apple-preview">🍎</div>
+    </div>
+    <button id="play">▷　Play</button>
+    <button id="settings">⚙　Settings</button>
+    <button id="daily">☆　Daily challenge</button>
+  </section>
+
+  <section id="settingsPanel" class="hidden">
+    <h2>Settings</h2>
+    <label>Game speed</label>
+    <select id="speed">
+      <option value="180">Easy</option>
+      <option value="130" selected>Normal</option>
+      <option value="90">Fast</option>
+    </select>
+    <button id="back">Back</button>
+  </section>
+
+  <div id="boardWrap" class="hidden">
+    <canvas id="board"></canvas>
+    <div id="over" class="hidden">
+      <h2>Game Over!</h2>
+      <p>Score: <span id="final">0</span></p>
+      <button id="again">Play Again</button>
+      <button id="home">Home</button>
+    </div>
+  </div>
+
+  <div id="mobileControls" class="hidden">
+    <button data-dir="up">▲</button>
+    <div>
+      <button data-dir="left">◀</button>
+      <button data-dir="down">▼</button>
+      <button data-dir="right">▶</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
